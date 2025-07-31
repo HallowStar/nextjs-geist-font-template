@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Evolution in Indonesia - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1>Internet Evolution Indonesia</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="eras.html" class="nav-link">Eras</a></li>
+                <li><a href="media.html" class="nav-link">Media</a></li>
+                <li><a href="sources.html" class="nav-link">Sources</a></li>
+            </ul>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Explore How the Internet Changed Indonesia</h1>
+                <p class="hero-subtitle">
+                    Discover the key turning points that have shaped Indonesia's digital landscape from 2006 to today. 
+                    Journey through five transformative eras that revolutionized how Indonesians connect, communicate, and conduct business online.
+                </p>
+                <a href="eras.html" class="cta-button">Start Exploring</a>
+            </div>
+            <div class="hero-image">
+                <img 
+                    src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d6dfdc6f-fe0c-49aa-b6b2-8ad14597b5e2.png" 
+                    alt="Modern Indonesia digital transformation showing smartphones, connectivity symbols, and technological progress"
+                    onerror="this.onerror=null; this.src='https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0b7d7abb-64a5-4411-9d2b-674f18bddbfd.png'"
+                />
+            </div>
+        </section>
+
+        <!-- Interactive Timeline Preview -->
+        <section class="timeline-preview">
+            <h2 class="section-title">Timeline Overview</h2>
+            <p class="section-subtitle">Click on any era to explore its key developments and impact</p>
+            
+            <div class="era-cards">
+                <div class="era-card" onclick="navigateToEra('era1')">
+                    <div class="era-period">2006-2009</div>
+                    <h3 class="era-title">Early Digital Era</h3>
+                    <p class="era-description">The foundations of mobile internet and early social platforms</p>
+                    <div class="era-highlights">
+                        <span class="highlight">3G Introduction</span>
+                        <span class="highlight">Facebook Rise</span>
+                        <span class="highlight">Kaskus Forums</span>
+                    </div>
+                </div>
+
+                <div class="era-card" onclick="navigateToEra('era2')">
+                    <div class="era-period">2010-2015</div>
+                    <h3 class="era-title">Social Media & App Boom</h3>
+                    <p class="era-description">Mainstream social media adoption and mobile app revolution</p>
+                    <div class="era-highlights">
+                        <span class="highlight">Instagram Launch</span>
+                        <span class="highlight">Tokopedia</span>
+                        <span class="highlight">Mobile Apps</span>
+                    </div>
+                </div>
+
+                <div class="era-card" onclick="navigateToEra('era3')">
+                    <div class="era-period">2016-2019</div>
+                    <h3 class="era-title">Digital Acceleration</h3>
+                    <p class="era-description">YouTube dominance and digital payment systems emergence</p>
+                    <div class="era-highlights">
+                        <span class="highlight">YouTube Growth</span>
+                        <span class="highlight">GoPay/OVO</span>
+                        <span class="highlight">Influencers</span>
+                    </div>
+                </div>
+
+                <div class="era-card" onclick="navigateToEra('era4')">
+                    <div class="era-period">2020-2022</div>
+                    <h3 class="era-title">Pandemic Digitalization</h3>
+                    <p class="era-description">COVID-19 accelerated digital adoption across all sectors</p>
+                    <div class="era-highlights">
+                        <span class="highlight">Remote Work</span>
+                        <span class="highlight">E-learning</span>
+                        <span class="highlight">E-commerce Boom</span>
+                    </div>
+                </div>
+
+                <div class="era-card" onclick="navigateToEra('era5')">
+                    <div class="era-period">2023-Present</div>
+                    <h3 class="era-title">Hyper-Connectivity & AI</h3>
+                    <p class="era-description">AI integration and 5G network expansion</p>
+                    <div class="era-highlights">
+                        <span class="highlight">ChatGPT</span>
+                        <span class="highlight">5G Rollout</span>
+                        <span class="highlight">AI Tools</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Statistics -->
+        <section class="statistics">
+            <h2 class="section-title">Digital Indonesia by Numbers</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">277M</div>
+                    <div class="stat-label">Internet Users (2023)</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">191M</div>
+                    <div class="stat-label">Social Media Users</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">77%</div>
+                    <div class="stat-label">Internet Penetration</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">5.7hrs</div>
+                    <div class="stat-label">Daily Internet Usage</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Internet Evolution in Indonesia. Educational project exploring digital transformation.</p>
+            <div class="footer-links">
+                <a href="sources.html">Sources & References</a>
+                <a href="media.html">Media Resources</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
